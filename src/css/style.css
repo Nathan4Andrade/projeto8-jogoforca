@@ -40,6 +40,7 @@ img {
   display: flex;
   height: 466px;
   flex-direction: column;
+  align-items: flex-end;
 
   justify-content: space-between;
 }
@@ -86,4 +87,8 @@ img {
   line-height: 19px;
   background-color: #e1ecf4;
   color: #39739d;
+}
+button:disabled {
+  background-color: #9faab5;
+  color: #798a9f;
 }

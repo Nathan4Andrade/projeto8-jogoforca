@@ -31,9 +31,17 @@ export default function Letras(props) {
   return (
     <div className="letras">
       <div className="keyboard">
-        {alfabeto.map((letra) => (
-          <button>{letra}</button>
-        ))}
+        {alfabeto.map((letra, index) => {
+          const select = selectedLetters.includes(letra);
+          return (
+            <button
+              onClick={() => selectLetter(letra, index)}
+              key={letra}
+              disabled={disabled || select}>
+              {letra.toUpperCase()}
+            </button>
+          );
+        })}
       </div>
     </div>
   );
