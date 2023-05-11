@@ -6,7 +6,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  margin-top: 59px;
+  margin-top: 25px;
 }
 
 img {
@@ -91,4 +91,12 @@ img {
 button:disabled {
   background-color: #9faab5;
   color: #798a9f;
+}
+
+.resposta-errada {
+  color: red;
+}
+
+.resposta-certa {
+  color: green;
 }
