@@ -1,0 +1,89 @@
+.jogo {
+  /*   position: absolute; */
+  width: 1025px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 59px;
+}
+
+img {
+  width: 400px;
+  height: 466px;
+
+  /* position: absolute;
+  top: 59px;
+  left: 39px; */
+}
+
+.choose-btn {
+  width: 200px;
+  height: 60px;
+  background: #27ae60;
+  border-radius: 8px;
+
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  line-height: 24px;
+  color: #ffffff;
+  border: 1px solid #27ae60;
+  margin-top: 30px;
+  /* position: absolute;
+  top: 89px;
+  right: 53px; */
+}
+.palavra-escolhida {
+  display: flex;
+  height: 466px;
+  flex-direction: column;
+
+  justify-content: space-between;
+}
+
+.palavra {
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 68px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.letras {
+  width: 1025px;
+  margin: 0 auto;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.keyboard {
+  width: 664px;
+  height: 91px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  /* position: absolute;
+  left: 221px;
+  top: 596px; */
+}
+
+.keyboard button {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: 1px solid #7aa7c7;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  background-color: #e1ecf4;
+  color: #39739d;
+}

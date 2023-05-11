@@ -1,23 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import palavras from "./palavras";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="jogo">
+        <img className="forca" src="assets/forca0.png" alt="forca"></img>
+        <div className="palavra-escolhida">
+          <button className="choose-btn">Escolher palavra</button>
+          <p className="palavra">_ _ _ _ _ _ _ _</p>
+        </div>
+      </div>
+      <div className="letras">
+        <div className="keyboard">
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+          <button></button>
+        </div>
+      </div>
     </div>
   );
 }
