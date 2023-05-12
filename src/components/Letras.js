@@ -37,7 +37,8 @@ export default function Letras(props) {
             <button
               onClick={() => selectLetter(letra, index)}
               key={letra}
-              disabled={disabled || select}>
+              disabled={disabled || select}
+              data-test="letter">
               {letra.toUpperCase()}
             </button>
           );

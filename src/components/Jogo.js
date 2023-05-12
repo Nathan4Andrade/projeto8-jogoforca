@@ -11,12 +11,21 @@ export default function Jogo(props) {
   const images = [forca0, forca1, forca2, forca3, forca4, forca5, forca6];
   return (
     <div className="jogo">
-      <img className="forca" src={images[errors]} alt="forca"></img>
+      <img
+        className="forca"
+        src={images[errors]}
+        alt="forca"
+        data-test="game-image"></img>
       <div className="palavra-escolhida">
-        <button className="choose-btn" onClick={startGame}>
+        <button
+          className="choose-btn"
+          onClick={startGame}
+          data-test="choose-word">
           Escolher palavra
         </button>
-        <div className={finalAnswer}>{showNewWord}</div>
+        <div className={finalAnswer} data-test="word">
+          {showNewWord}
+        </div>
       </div>
     </div>
   );

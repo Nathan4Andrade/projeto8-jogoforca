@@ -11,7 +11,6 @@ function App() {
   const [showNewWord, setShowNewWord] = useState("");
   const [finalAnswer, setFinalAnswer] = useState("palavra");
   const [playingWord, setPlayingWord] = useState([]);
-  const [chute, setChute] = useState("");
 
   const wordSorter =
     palavras[Math.floor(Math.random() * (palavras.length - 1))];
