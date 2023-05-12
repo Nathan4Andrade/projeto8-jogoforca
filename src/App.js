@@ -1,7 +1,8 @@
 import Jogo from "./components/Jogo";
 import Letras from "./components/Letras";
-import palavras from "./palavras";
+import Chute from "./components/Chute";
 
+import palavras from "./palavras";
 import { useState } from "react";
 
 function App() {
@@ -66,6 +67,7 @@ function App() {
         disabled={disabled}
         selectedLetters={selectedLetters}
         selectLetter={selectLetter}></Letras>
+      <Chute></Chute>
     </div>
   );
 }
