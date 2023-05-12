@@ -1,6 +1,5 @@
 import Jogo from "./components/Jogo";
 import Letras from "./components/Letras";
-import Chute from "./components/Chute";
 
 import palavras from "./palavras";
 import { useState } from "react";
@@ -12,6 +11,7 @@ function App() {
   const [showNewWord, setShowNewWord] = useState("");
   const [finalAnswer, setFinalAnswer] = useState("palavra");
   const [playingWord, setPlayingWord] = useState([]);
+  const [chute, setChute] = useState("");
 
   const wordSorter =
     palavras[Math.floor(Math.random() * (palavras.length - 1))];
@@ -39,8 +39,9 @@ function App() {
 
       setShowNewWord(newWordDisplay);
     } else {
-      setCounterErrors(counterErrors + 1);
-      if (counterErrors === 5) {
+      let counter = counterErrors + 1;
+      setCounterErrors(counter);
+      if (counter === 6) {
         setShowNewWord(playingWord);
         setFinalAnswer(`${finalAnswer} resposta-errada`);
         setDisabled(true);
@@ -67,7 +68,6 @@ function App() {
         disabled={disabled}
         selectedLetters={selectedLetters}
         selectLetter={selectLetter}></Letras>
-      <Chute></Chute>
     </div>
   );
 }
